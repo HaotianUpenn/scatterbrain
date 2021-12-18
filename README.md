@@ -1,4 +1,5 @@
-We use the template from `https://github.com/ashleve/lightning-hydra-template`.
+We use the template from `https://github.com/ashleve/lightning-hydra-template` and we refer much code from https://github.com/HazyResearch/pixelfly. We try to implement the results and write our comments on this new techniques for the attention mechanism. Source paper: "Unifying Sparse and Low-rank Attention Approximation".
+
 Please read the instructions there to understand the repo structure.
 
 ## Implementation & Experiments
@@ -34,10 +35,10 @@ python run.py experiment=imagenet-t2tvit-eval.yaml model/t2tattn_cfg=sblocal dat
 
 Python 3.8+, Pytorch 1.9+, torchvision, torchtext, pytorch-fast-transformers, munch, einops, timm, hydra-core, hydra-colorlog, python-dotenv, rich, pytorch-lightning, lightning-bolts.
 
-We provide a Dockerfile that lists all the required packages.
+We provide a Dockerfile that lists all the required packages. Also, you could see all package installed in our notebooks and we include requirement.txt.
 
 ## Citation
-If you use this codebase, or otherwise found our work valuable, please cite:
+Our work is inspired from paper below:
 ```
 @inproceedings{chen2021scatterbrain,
   title={Scatterbrain: Unifying Sparse and Low-rank Attention},
